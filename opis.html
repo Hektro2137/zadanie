@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kostka Rubika Opis</title>
+    <style>
+        html {
+            height: 100%;
+            background: linear-gradient(135deg, #f0fc4c, #f79d35);
+            background-attachment: fixed;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background: transparent;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 60px auto;
+            gap: 40px;
+            align-items: flex-start; /* TUTAJ dodane */
+        }
+
+        .podst {
+            width: 100px;
+            background-color: #d88c6fdd;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            color: white;
+        }
+
+        .podst ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .podst li {
+            margin-bottom: 15px;
+        }
+
+        .podst a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .podst a:hover {
+            text-decoration: underline;
+        }
+
+        .kostka {
+            flex: 1;
+            background-color: #eb9797dd;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #a83e3e;
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                max-width: 90%;
+                margin: 40px auto;
+                gap: 20px;
+            }
+            .podst {
+                width: 100%;
+                padding: 20px;
+                border-radius: 15px;
+            }
+            .kostka {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="podst">
+            <ul>
+                <li><a href="strona.html">Strona Główna</a></li>
+                <li><a href="bio.html">Biografia Ernő Rubika</a></li>
+                <li><a href="photo.html">Zdjęcia</a></li>
+                <li><a href="film.html">Filmy</a></li>
+            </ul>
+        </div>
+
+        <div class="kostka">
+            <h1>Opis Kostki</h1>
+        <p>Kostka Rubika to znana na całym świecie łamigłówka logiczna, która od lat fascynuje zarówno dzieci, jak i dorosłych. Została wynaleziona w 1974 roku przez węgierskiego architekta i profesora Ernő Rubika jako narzędzie do nauki zasad przestrzennego myślenia.</p>
+
+        <p>Klasyczna kostka Rubika ma postać sześcianu o wymiarach 3x3x3, składającego się z 26 ruchomych elementów. Każda z sześciu ścian ma inny kolor: biały, żółty, czerwony, zielony, niebieski i pomarańczowy. Celem jest ułożenie kostki tak, aby każda ściana miała jednolity kolor.</p>
+
+        <p>Choć może wydawać się skomplikowana, rozwiązanie kostki Rubika jest możliwe dla każdego – wystarczy poznać odpowiednią metodę i trochę poćwiczyć. To świetna forma zabawy, ale też doskonały trening dla mózgu, rozwijający logiczne myślenie, koncentrację i cierpliwość.</p>
+
+        <p>Dzięki swojej ponadczasowości, kostka Rubika stała się symbolem inteligencji, wyzwań umysłowych i kreatywności. Dziś jest nie tylko zabawką, ale też elementem kultury popularnej, przedmiotem zawodów speedcubingu i narzędziem edukacyjnym.</p>
+
+        </div>
+    </div>
+</body>
+</html>

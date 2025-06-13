@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kostka Rubika Filmy</title>
+    <style>
+        html {
+            height: 100%;
+            background: linear-gradient(135deg, #56d690, #0d6350);
+            background-attachment: fixed;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background: transparent;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 60px auto;
+            gap: 40px;
+            align-items: flex-start; /* TUTAJ dodane */
+        }
+
+        .podst {
+            width: 100px;
+            background-color: #7de7bfdd;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            color: white;
+        }
+
+        .podst ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .podst li {
+            margin-bottom: 15px;
+        }
+
+        .podst a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .podst a:hover {
+            text-decoration: underline;
+        }
+
+        .kostka {
+            flex: 1;
+            background-color: #ffffffdd;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #176144;
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                max-width: 90%;
+                margin: 40px auto;
+                gap: 20px;
+            }
+            .podst {
+                width: 100%;
+                padding: 20px;
+                border-radius: 15px;
+            }
+            .kostka {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="podst">
+            <ul>
+                <li><a href="strona.html">Strona Główna</a></li>
+                <li><a href="opis.html">Opis kostki rubika</a></li>
+                <li><a href="bio.html">Biofrafia Ernő Rubika</a></li>
+                <li><a href="photo.html">Zdjęcia</a></li>
+            </ul>
+        </div>
+
+        <div class="kostka">
+            <h1>Filmy</h1>
+            <video width="320" height="240" controls>
+            <source src="ukladaniekostki.mp4" type="video/mp4">
+            <source src="ukladaniekostki.ogg" type="video/ogg">
+            </video>
+            <p>Poradnik jak ułożyć kostke rubika</p>
+            <video width="320" height="240" controls>
+            <source src="ciekawostki.mp4" type="video/mp4">
+            <source src="ciekawostki.ogg" type="video/ogg">
+            </video>
+            <p>Ciekawostki na temat Kostki Rubika oraz jej Historia</p>
+        </div>
+    </div>
+</body>
+</html>

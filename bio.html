@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Biografia Ernő Rubika</title>
+    <style>
+        html {
+            height: 100%;
+            background: linear-gradient(135deg, #4ac3a5, #2e647d);
+            background-attachment: fixed;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background: transparent;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 60px auto;
+            gap: 40px;
+            align-items: flex-start; /* TUTAJ dodane */
+        }
+
+        .podst {
+            width: 100px;
+            background-color: #6ddfdfdd;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            color: white;
+        }
+
+        .podst ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .podst li {
+            margin-bottom: 15px;
+        }
+
+        .podst a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .podst a:hover {
+            text-decoration: underline;
+        }
+
+        .kostka {
+            flex: 1;
+            background-color: #ffffffdd;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #0a3083;
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                max-width: 90%;
+                margin: 40px auto;
+                gap: 20px;
+            }
+            .podst {
+                width: 100%;
+                padding: 20px;
+                border-radius: 15px;
+            }
+            .kostka {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="podst">
+            <ul>
+                <li><a href="strona.html">Strona Główna</a></li>
+                <li><a href="opis.html">Opis kostki rubika</a></li>
+                <li><a href="photo.html">Zdjęcia</a></li>
+                <li><a href="film.html">Filmy</a></li>
+            </ul>
+        </div>
+
+        <div class="kostka">
+            <h1>Biografia Ernő Rubika</h1>
+            <p>Ernő Rubik urodził się 13 lipca 1944 roku w Budapeszcie, na Węgrzech. Jest węgierskim architektem, profesorem i wynalazcą, znanym na całym świecie jako twórca jednej z najsłynniejszych łamigłówek logicznych – <em>kostki Rubika</em>.</p>
+
+            <p>Rubik studiował rzeźbę na Węgierskiej Akademii Sztuk Pięknych, a następnie architekturę na Uniwersytecie Technicznym w Budapeszcie. Już w młodości interesował się geometrią, formami przestrzennymi i mechaniką. W 1974 roku, pracując jako wykładowca, zaprojektował sześcienną łamigłówkę, która miała pomóc jego studentom zrozumieć zasady trójwymiarowego ruchu obiektów w przestrzeni.</p>
+
+            <p>Początkowo nazywana „<em>magiczna kostka</em>” (węg. <em>Bűvös Kocka</em>), zabawka została opatentowana w 1975 roku i szybko zdobyła popularność na Węgrzech. W 1980 roku trafiła na rynek międzynarodowy jako „Rubik's Cube” i stała się światowym fenomenem – do dziś sprzedano ponad 400 milionów egzemplarzy!</p>
+
+            <p>Ernő Rubik kontynuował działalność naukową i edukacyjną. Zajmował się m.in. rozwojem kreatywności u młodych ludzi oraz promowaniem nauki poprzez zabawę. Założył także fundację Rubik Foundation, wspierającą innowacje i edukację technologiczną.</p>
+
+            <p>Dziś Ernő Rubik uznawany jest za jednego z najbardziej wpływowych wynalazców XX wieku. Mimo wielkiego sukcesu, pozostał osobą skromną, wierzącą w siłę prostych pomysłów i potencjał ludzkiego umysłu.</p>
+
+        </div>
+    </div>
+</body>
+</html>

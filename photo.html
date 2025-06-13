@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kostka Rubika Zdjęcia</title>
+    <style>
+        html {
+            height: 100%;
+            background: linear-gradient(135deg, #a356d6, #3f084d);
+            background-attachment: fixed;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background: transparent;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 60px auto;
+            gap: 40px;
+            align-items: flex-start; /* TUTAJ dodane */
+        }
+
+        .podst {
+            width: 100px;
+            background-color: #ca5fcadd;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            color: white;
+        }
+
+        .podst ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .podst li {
+            margin-bottom: 15px;
+        }
+
+        .podst a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .podst a:hover {
+            text-decoration: underline;
+        }
+
+        .kostka {
+            flex: 1;
+            background-color: #ffffffdd;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #770a65;
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                max-width: 90%;
+                margin: 40px auto;
+                gap: 20px;
+            }
+            .podst {
+                width: 100%;
+                padding: 20px;
+                border-radius: 15px;
+            }
+            .kostka {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="podst">
+            <ul>
+                <li><a href="strona.html">Strona Główna</a></li>
+                <li><a href="opis.html">Opis kostki rubika</a></li>
+                <li><a href="bio.html">Biofrafia Ernő Rubika</a></li>
+                <li><a href="film.html">Filmy</a></li>
+            </ul>
+        </div>
+
+        <div class="kostka">
+            <h1>Zdjęcia</h1>
+            <img src="erno.jpg" alt="Ernő" width="500" height="333">
+            <p>Ernő Rubik (twórca kostki rubika)</p>
+            <img src="kostka1.png" alt="kostka1" width="500" height="333">
+            <p>Jedna z pierwszych kostek rubika</p>
+        </div>
+    </div>
+</body>
+</html>
